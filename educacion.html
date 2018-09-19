@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="César W Grimaldos M">
+	<meta name="description" content="Prueba Final HTML5">
+	<meta name="generator" content="Ejercicios prácticos HTML5">
+	<meta name="keywords" content="Ejercicios, Soluciones, Prácticas, HTML5">
+	<title>Datos Personales</title>
+	<header>
+		<table>
+			<tr>
+				<td>
+					<p><img src="images/logo1.svg" alt="Logo" align="MIDDLE" border="1" height="170" width="200"></p>
+				</td>
+				<td>
+					<p><h1>Hoja de Vida</h1></p>
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<nav>
+						<ul class="menu">
+							<li><a href="index.html"><i class="icon-home"></i>INICIO</a></li>
+						</ul>
+   					</nav>	
+   				</td>
+				<td>
+					<nav>
+						<ul class="menu">
+							<li><a  href="educacion.html"><i class="icon-user"></i>ESTUDIOS</a></li>
+						</ul>
+ 					</nav>
+ 				</td>
+				<td>
+					<nav>
+						<ul class="menu">
+							<li><a  href="experiencia.html"><i class="icon-camera"></i>EXPERIENCIA</a></li>
+						</ul>
+					</nav>
+						
+ 				</td>
+			</tr>
+		</table>		
+	</header>
+</head>
+<body>
+	<p><h2 align="center">Educaci&oacute;n</h2></p>
+	<table>
+		<tr>
+			<td>
+				<p><img src="images/Foto_CG.jpg" alt="Logo" align="MIDDLE" border="1" height="150" width="110"></p>
+			</td>
+			<td>
+				<p>
+					<h2>CESAR W GRIMALDOS MEJIA</h2>
+					<h3>Cartagena de Indias 11 de enero 1966</h3>
+				</p>
+			</td>				
+		</tr>
+	</table>
+	<!--creando tabla de estudios realizados 	-->
+	<table class="egt" align="center" border="5">
+		<colgroup>
+			<colgroup span="2" style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);"></colgroup>
+			<colgroup span="2" style="background: rgba(255, 128, 0, 0.3); border: 1px solid rgba(200, 100, 0, 0.3);"></colgroup>
+		</colgroup>
+		<p>
+			<h2 align="center">Listado de estudios realizados y T&iacute;tulos obtenidos</h2>
+		</p>
+		<tr>
+			<th><h3>Año</h3></th>
+		    <th><h3>Instituci&oacute;n</h3></th>
+		    <th><h3>Lugar</h3></th>
+		    <th><h3>T&iacute;tulo obtenido</h3></th>
+  		</tr>
+
+  		<tr>
+		    <td>1987</td>
+		    <td>Seminario Menor de Cartagena</td>
+		    <td>Cartagena de Indias</td>
+		    <td>Bachiller Academico</td>
+		</tr>
+		<tr>
+		    <td>1991</td>
+		    <td>Corporación Universidad Tecnológica de Bolívar</td>
+		    <td>Cartagena de Indias</td>
+		    <td>Tecnólogo en Análisis y Programación de Computadores</td>
+		</tr>
+		<tr>
+		    <td>2007</td>
+		    <td>SENA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>Diseño de Bases de Datos en SQL</td>
+		</tr>
+		<tr>
+		    <td>2007</td>
+		    <td>SENA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>AUTOCAD 2D</td>
+		</tr>
+		<tr>
+		    <td>2007</td>
+		    <td>SENA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>AUDITORIA INFORMATICA - CONPCEPTUALIZACION</td>
+		</tr>
+		<tr>
+		    <td>2008</td>
+		    <td>SENA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>MANTENIMIENTO DE COMPUTADORES</td>   
+		</tr>
+		<tr>
+		    <td>2010</td>
+		    <td>SENA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>CONTROLES Y SEGURIDAD INFORMATICA</td>
+		</tr>
+		<tr>
+		    <td>2010</td>
+		    <td>BOGOTA DOT NET</td>
+		    <td>BOGOTA</td>
+		    <td>CURSO BASICO DE C#</td>
+		</tr>
+		<tr>
+		    <td>2010 - 2018</td>
+		    <td>AUTO DIDACTA</td>
+		    <td>Cartagena de Indias</td>
+		    <td>DISEÑO WEB (JOOMLA - WORDPRESS - PHOTOSHOP - ILLUSTRATOR -AFTER EFFECTS</td>
+		</tr>
+	</table>
+
+	<h1 align="center">Formulario Agregar estudios</h1>
+	<table border="5" align="center">
+		<tr>
+			<th><h3>Año</h3></th>
+		    <th><h3>Instituci&oacute;n</h3></th>
+		    <th><h3>Lugar</h3></th>
+		    <th><h3>T&iacute;tulo obtenido</h3></th>
+		    <th><h3>Enviar</h3></th>
+		    
+  		</tr>
+  		<tr>
+  			<td>
+  				<form method="post" action="otrosestudios">
+  					<p>
+  						<!--creo la lista desplegable para seleccionar la fecha />-->
+
+  						<select name="anio" id="anio">
+  							<input type="date" name="cumpleanios" step="1" min="1900" max="2100">
+       					</select>
+       				</p>
+       				<td>
+       					<p>
+       						<!--captura del campo "institucion"-->
+   							<input type="text" id="institucion" name="institucion" placeholder="Institucion" size="50">
+   						</p>
+
+       				</td>
+       				<td>
+       					<p>
+       						<!--captura del campo lugar-->
+   							<input type="text" id="lugar" name="lugar" placeholder="Lugar" size="30">
+   						</p>
+   					</td>
+   					<td>
+   						<p>
+   							<!--captura del campo titulo obtenido-->
+   							<input type="text" id="titulo" name="titulo" placeholder="T&iacute;tulo obtenido" size="40">
+   						</p>
+   					</td>
+   					<td>
+   						<input type="submit" value="Enviar" >
+   						<input class="boton2" type="reset" value="Borrar" >
+   					</td>
+       			</form>
+       			
+       		</td>			
+		</tr>
+	</table>
+	<br>
+        
+
+	
+</body>
+<footer>	
+	<svg width="1600" heigh="200">
+		<line x1="0" y1="0" x2="1400" y2="0" stroke="crimson" stroke-width="4"/>
+		
+	</svg>
+	<nav>
+        <h3>Navega</h3>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="educacion.html">ESTUDIOS</a></li>
+            <li><a href="experiencia.html">EXPERIENCIA</a></li>
+            <!-- <li><a href="#">CONTACTO</a></li> -->
+        </ul>
+    </nav>
+	<p>
+		<h4 align="center">Celular: 321 515 4446 - E-mail <a href="mailto:enithma@hotmail.com">enithma@hotmail.com</a></h4>
+		<h4 align="center">Cartagena de Indias 2018</h4>
+	</p>	
+	
+</footer>
+</html>
+
